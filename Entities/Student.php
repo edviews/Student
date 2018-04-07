@@ -12,4 +12,9 @@ class Student extends Model
     {
         return $this->hasOne('Modules\Student\Entities\Profile');
     }
+
+    public function academic()
+    {
+        return $this->hasMany('Modules\Student\Entities\Academic');
+    }
 }
