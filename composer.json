@@ -1,0 +1,25 @@
+{
+    "name": "edviews/student",
+    "description": "",
+    "authors": [
+        {
+            "name": "Kerron Gordon",
+            "email": "kgpsounds.com@gmail.com"
+        }
+    ],
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Modules\\Student\\Providers\\StudentServiceProvider"
+            ],
+            "aliases": {
+                
+            }
+        }
+    },
+    "autoload": {
+        "psr-4": {
+            "Modules\\Student\\": ""
+        }
+    }
+}
