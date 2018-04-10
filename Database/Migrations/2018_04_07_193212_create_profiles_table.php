@@ -21,7 +21,7 @@ class CreateProfilesTable extends Migration
             $table->string('marital_status');
             $table->string('citizenship');
             $table->string('country_of_birth');
-            $table->string('address');
+            $table->text('address');
             $table->string('parish');
             $table->string('home_phone');
             $table->string('cell_phone');
