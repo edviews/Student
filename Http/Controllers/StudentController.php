@@ -5,6 +5,7 @@ namespace Modules\Student\Http\Controllers;
 use Illuminate\Http\Request;
 use Illuminate\Http\Response;
 use Illuminate\Routing\Controller;
+use Modules\Student\Entities\Student;
 
 class StudentController extends Controller
 {
@@ -14,7 +15,7 @@ class StudentController extends Controller
      */
     public function index()
     {
-        return view('student::index');
+        return Student::all();
     }
 
     /**
@@ -39,9 +40,9 @@ class StudentController extends Controller
      * Show the specified resource.
      * @return Response
      */
-    public function show()
+    public function show(Student $student)
     {
-        return view('student::show');
+        return $student;
     }
 
     /**
