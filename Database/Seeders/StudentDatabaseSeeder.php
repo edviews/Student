@@ -17,7 +17,7 @@ class StudentDatabaseSeeder extends Seeder
     {
 
         // $this->call("OthersTableSeeder");
-        factory(Student::class, 10)->create();
-        factory(Profile::class, 10)->create();
+        factory(Student::class, 50)->create();
+        factory(Profile::class, 50)->create();
     }
 }
